@@ -1,0 +1,34 @@
+.Footer {
+  background-color: #20232a;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.Footer-header {
+  margin: 0 0 8px;
+  color: #999;
+}
+
+.Footer-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer-section {
+  margin-bottom: 10px;
+}
+
+.Footer-link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Footer-link:hover {
+  color: rgb(2, 198, 154);
+}

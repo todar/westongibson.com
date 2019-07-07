@@ -1,0 +1,52 @@
+.FixedActionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  z-index: 997;
+  background-color: #424242;
+  color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pulse {
+  overflow: visible;
+}
+
+.pulse:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  border-radius: inherit;
+  transition: opacity 0.3s, transform 0.3s;
+  animation: pulse-animation 4s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  z-index: -1;
+}
+
+@keyframes pulse-animation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}

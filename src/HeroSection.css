@@ -1,0 +1,59 @@
+.HeroSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  min-height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./hero-kitchen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #cccccc;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.HeroSection::before {
+  border-radius: inherit;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+    url("./hero-kitchen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 100;
+  animation: heroFadeIn 1.3s;
+}
+
+@keyframes heroFadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.HeroSection-tagline {
+  line-height: 45px;
+}
+
+.HeroSection-quote {
+  position: absolute;
+  /* width: 100%; */
+  margin: 0;
+  padding: 25px 50px;
+  background-color: rgba(50, 50, 50, 0.7);
+  font-size: calc(10px + 1.5vmin);
+  text-align: center;
+  bottom: 50%;
+}
