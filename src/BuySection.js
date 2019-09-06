@@ -1,22 +1,19 @@
 import React from "react";
+import Section from "./Section";
+import underContract from "./under-contract.jpg";
 
 function BuySection() {
   return (
-    <div
-      style={{
-        backgroundColor: "rgb(245,246,248)"
-      }}
-    >
-      <section className="section">
-        <h2>Buy With Confidence</h2>
-        <p>
-          Weston will be your guide who will walk with you from start to finish
-          through the entire home-buying process. He is a skilled negotiator who
-          will help you find and purchase the perfect home without overpaying
-          for it.
-        </p>
-      </section>
-    </div>
+    <Section
+      title="Buy With Confidence"
+      content="Weston will be your guide who will walk with you from start to
+      finish through the entire home-buying process. He is a skilled
+      negotiator who will help you find and purchase the perfect home
+      without overpaying for it."
+      backgroundColor="rgb(245,246,248)"
+      src={underContract}
+      alt="Under Contract"
+    />
   );
 }
 

@@ -1,12 +1,15 @@
 import React from "react";
+import realtor from "./realtor.png";
+import Container from "./Container";
+import equalHousing from "./equal-housing.png";
 import "./Footer.css";
 
 function Footer() {
   return (
     <footer className="Footer">
-      <div className="Footer-container">
+      <Container className="Footer-container">
         <div className="Footer-section">
-          <h3 className="Footer-header">Contact</h3>
+          <h3 className="Footer-header">Contact Weston</h3>
           <div>
             <a rel="noopener" className="Footer-link" href="tel:+6023994200">
               (602) 399-4200
@@ -21,17 +24,35 @@ function Footer() {
           </div>
         </div>
         <div className="Footer-section">
-          <h3 className="Footer-header">Connect</h3>
+          <h3 className="Footer-header">Follow Weston</h3>
           <div>
-            <a rel="noopener" className="Footer-link" href="#!">
+            <a
+              rel="noopener"
+              className="Footer-link"
+              target="blank"
+              href="https://www.facebook.com/LastStopRealty/"
+            >
               Facebook
             </a>
-            <a rel="noopener" className="Footer-link" href="#!">
+            <a
+              rel="noopener"
+              className="Footer-link"
+              target="blank"
+              href="https://www.instagram.com/westongibsonrealestate/"
+            >
               Instagram
             </a>
           </div>
         </div>
-      </div>
+        <div className="Footer-required">
+          <img className="Footer-realtor" src={realtor} alt="Realtor Logo" />
+          <img
+            className="Footer-equal-housing"
+            src={equalHousing}
+            alt="Equal Housing Logo"
+          />
+        </div>
+      </Container>
     </footer>
   );
 }

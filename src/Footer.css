@@ -1,26 +1,28 @@
 .Footer {
   background-color: #20232a;
   color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 50px;
 }
 
 .Footer-header {
-  margin: 0 0 8px;
+  margin: 0 0 0.75rem;
   color: #999;
 }
 
 .Footer-container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 720px) {
+  .Footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .Footer-section {
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
 }
 
 .Footer-link {
@@ -30,5 +32,19 @@
 }
 
 .Footer-link:hover {
-  color: rgb(2, 198, 154);
+  color: var(--primary-color);
+}
+
+.Footer-required {
+  display: flex;
+  align-items: center;
+}
+
+.Footer-realtor {
+  width: 100px;
+  margin-left: -20px;
+}
+
+.Footer-equal-housing {
+  width: 75px;
 }

@@ -1,5 +1,10 @@
+:root {
+  --primary-color: #4db6ac;
+}
+
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,7 +28,6 @@ body {
   padding-bottom: 4em;
   padding-top: 4em;
   text-align: center;
-  max-width: 1080px;
 }
 
 @media screen and (min-width: 1019px) {
