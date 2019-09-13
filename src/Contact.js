@@ -1,5 +1,7 @@
 import React from "react";
 import Container from "./Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
 
 function Contact() {
@@ -12,31 +14,34 @@ function Contact() {
           method="POST"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p className="Contact-title">Contact</p>
+          <p className="Contact-title">
+            <FontAwesomeIcon icon={faEnvelope} /> Contact
+          </p>
 
-          <input
-            type="text"
-            name="Name"
-            className="form-control"
-            placeholder="Name"
-            required
-          />
+          <label className="Contact-label" htmlFor="Name">
+            Name
+            <input type="text" name="Name" className="form-control" required />
+          </label>
 
-          <input
-            type="email"
-            name="Email"
-            className="form-control"
-            placeholder="Your Email"
-            required
-          />
+          <label className="Contact-label" htmlFor="Email">
+            Email
+            <input
+              type="email"
+              name="Email"
+              className="form-control"
+              required
+            />
+          </label>
 
-          <textarea
-            className="form-control"
-            name="Message"
-            rows="5"
-            placeholder="Message"
-            required
-          />
+          <label className="Contact-label" htmlFor="Message">
+            Message
+            <textarea
+              className="form-control"
+              name="Message"
+              rows="5"
+              required
+            />
+          </label>
 
           <button type="submit" className="Contact-btn">
             Send

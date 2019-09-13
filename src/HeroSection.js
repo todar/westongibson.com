@@ -11,7 +11,7 @@ function HeroSection() {
   return (
     <div
       style={{
-        backgroundColor: "#20232a",
+        backgroundColor: "#1d1c1c",
         background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(${heroKitchen})`,
         backgroundRepeat: "no-repeat",

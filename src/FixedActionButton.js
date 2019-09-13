@@ -31,21 +31,24 @@ function FixedActionButton() {
       >
         <a
           rel="noopener"
-          href="mailto:weston.gibson03@gmail.com?subject=Real Estate"
+          href="mailto:weston@westongibson.com"
           className="FixedActionButton-floating-btn"
+          title="Email"
         >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
         <a
           rel="noopener"
-          href="sms:6023994200?body=Hello, Weston. I'd like to set up a meeting with you to talk about real estate."
+          href="sms:6023994200"
+          title="Text"
           className="FixedActionButton-floating-btn"
         >
           <FontAwesomeIcon icon={faSms} />
         </a>
         <a
           rel="noopener"
-          href="tel:+6023994200"
+          href="tel:+16023994200"
+          title="Call"
           className="FixedActionButton-floating-btn"
         >
           <FontAwesomeIcon icon={faPhone} />

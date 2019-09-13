@@ -8,12 +8,14 @@
   background-color: #fff;
   border: 1px solid #e0e0e0;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .Contact-title {
   margin: 0 0 2rem;
   font-size: 1.5rem;
+  color: #495057;
+  text-align: center;
 }
 
 .form-control {
@@ -46,7 +48,6 @@ textarea.form-control {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  /* vertical-align: middle; */
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -74,9 +75,17 @@ textarea.form-control {
   width: 100%;
   outline: 0;
   border: none;
-  color: var(--primary-color);
 }
 
 .Contact-btn:hover {
   background-color: rgba(77, 182, 172, 0.1);
+}
+
+.Contact-label {
+  /* display: flex; */
+  margin-left: 0.72rem;
+}
+
+textarea {
+  font: inherit;
 }
