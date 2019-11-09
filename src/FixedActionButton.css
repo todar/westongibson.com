@@ -19,6 +19,9 @@
   border: none;
   outline: none;
   text-decoration: none;
+  outline: 0;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .FixedActionButton::-moz-focus-inner {
