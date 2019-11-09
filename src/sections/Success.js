@@ -1,8 +1,8 @@
 import React from "react";
 import "./Success.css";
-import ImageLoader from "./ImageLoader";
-import diamondClub from "./diamond club member.png";
-import Container from "./Container";
+import ImageLoader from "../components/ImageLoader";
+import diamondClub from "../assets/diamond club member.png";
+import Container from "../components/Container";
 
 function Success() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "./Section";
-import openHouse from "./open-house.png";
+import Section from "../components/Section";
+import openHouse from "../assets/open-house.png";
 
 function SellSection() {
   return (

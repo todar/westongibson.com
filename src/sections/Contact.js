@@ -1,12 +1,12 @@
 import React from "react";
-import Container from "./Container";
+import Container from "../components/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css";
 
 function Contact() {
   return (
-    <div className="Contact">
+    <div className="Contact" id="contact">
       <Container>
         <form
           className="Contact-form text-center border border-light p-5"

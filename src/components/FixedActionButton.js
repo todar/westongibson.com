@@ -31,7 +31,7 @@ function FixedActionButton() {
       >
         <a
           rel="noopener"
-          href="mailto:weston@westongibson.com"
+          href="mailto:weston.gibson03@gmail.com"
           className="FixedActionButton-floating-btn"
           title="Email"
         >

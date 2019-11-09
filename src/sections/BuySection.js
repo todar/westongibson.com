@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "./Section";
-import underContract from "./under-contract.jpg";
+import Section from "../components/Section";
+import underContract from "../assets/under-contract.jpg";
 
 function BuySection() {
   return (

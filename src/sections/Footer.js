@@ -1,7 +1,7 @@
 import React from "react";
-import realtor from "./realtor.png";
-import Container from "./Container";
-import equalHousing from "./equal-housing.png";
+import realtor from "../assets/realtor.png";
+import Container from "../components/Container";
+import equalHousing from "../assets/equal-housing.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -17,14 +17,14 @@ function Footer() {
       <Container className="Footer-container">
         <div className="Footer-section">
           <h3 className="Footer-header">Contact Weston</h3>
-          <div>
+          <div style={{ marginLeft: "-15px" }}>
             <a rel="noopener" className="Footer-link" href="tel:+6023994200">
               <FontAwesomeIcon icon={faPhone} /> (602) 399-4200
             </a>
             <a
               rel="noopener"
               className="Footer-link"
-              href="mailto:weston@westongibson.com"
+              href="mailto:weston.gibson03@gmail.com"
             >
               <FontAwesomeIcon icon={faEnvelope} /> weston@westongibson.com
             </a>
@@ -35,7 +35,8 @@ function Footer() {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between"
+              justifyContent: "flex-start",
+              marginLeft: "-15px"
             }}
           >
             <a
