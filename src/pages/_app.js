@@ -5,8 +5,8 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+import AppBar from "../components/Appbar";
 
-// 4db6ac
 function MyApp({ Component, pageProps }) {
   // Update the theme base on the users prefered setting.
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: light)");
@@ -14,7 +14,13 @@ function MyApp({ Component, pageProps }) {
     () =>
       createMuiTheme({
         palette: {
-          type: prefersDarkMode ? "dark" : "light"
+          type: prefersDarkMode ? "dark" : "light",
+          primary: {
+            main: "#000000"
+          },
+          secondary: {
+            main: "#4db6ac"
+          }
         }
       }),
     [prefersDarkMode]
@@ -30,6 +36,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <CssBaseline />
+      <AppBar />
       <Component {...pageProps} />
     </ThemeProvider>
   );
